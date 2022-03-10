@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    android:alpha="0.75">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Assignment 1"
+        android:background="@color/blue"
+        android:alpha="0.8"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:text="Enter your name"
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/headline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        android:hint="Your Name"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:textColorLink="@color/white"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:autofillHints="RAO"/>
+
+    <Button
+        android:id="@+id/createBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inputText"
+        android:layout_marginTop="100dp"
+        android:text="Greet"/>
+
+    <Button
+        android:id="@+id/createBTN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/createBTN"
+        android:layout_marginTop="50dp"
+        android:text="Toast"/>
+
+    <TextView
+        android:id="@+id/displayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/createBTN2"
+        android:layout_marginTop="200dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
