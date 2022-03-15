@@ -21,7 +21,9 @@ class MyAdapter(private var infoList: ArrayList<User>, var context: Context) : R
 
     class myViewHolder(view: View) : RecyclerView.ViewHolder(view){
         var imgView = view.findViewById<CircleImageView>(R.id.profile_pic)
+
         var username = view.findViewById<TextView>(R.id.person_name)
+
         var mobileNum = view.findViewById<TextView>(R.id.mobile_num)
     }
 
