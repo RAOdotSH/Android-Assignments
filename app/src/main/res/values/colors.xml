@@ -8,4 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#2E19ED</color>
+    <color name="light_brown">#C38A37</color>
+    <color name="light_skin">#D5B262</color>
+    <color name="stone">#607682</color>
+    <color name="light_stone">#B4C0C5</color>
+    <color name="gold_brown">#D5B262</color>
 </resources>
