@@ -13,4 +13,8 @@
     <color name="stone">#607682</color>
     <color name="light_stone">#B4C0C5</color>
     <color name="gold_brown">#D5B262</color>
+    <color name="pink">#FF008E</color>
+    <color name="purple">#612897</color>
+    <color name="dark_blue">#0C1E7F</color>
+    <color name="marron">#D22779</color>
 </resources>

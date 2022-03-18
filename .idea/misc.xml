@@ -3,12 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/btn_bg.xml" value="0.2975" />
         <entry key="app/src/main/res/drawable/btnbg.xml" value="0.2975" />
+        <entry key="app/src/main/res/drawable/card_bg.xml" value="0.2975" />
+        <entry key="app/src/main/res/drawable/male_female_focus.xml" value="0.2975" />
+        <entry key="app/src/main/res/drawable/male_female_normal.xml" value="0.2975" />
+        <entry key="app/src/main/res/drawable/plus_minus.xml" value="0.2975" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/assignment1.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/assignment2.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/assignment3.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/assignment4.xml" value="0.353125" />
+        <entry key="app/src/main/res/layout/assignment5.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/assignmnet3_1.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/list_item.xml" value="0.353125" />
       </map>
