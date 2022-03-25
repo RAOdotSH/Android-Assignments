@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
         val assignment4btn = findViewById<Button>(R.id.Assignment4)
         assignment4btn.setOnClickListener{ assignment4() }
 
+        val assignment5btn = findViewById<Button>(R.id.Assignment5)
+        assignment5btn.setOnClickListener{ assignment5() }
     }
 
     private fun assignment1() {
@@ -43,6 +45,11 @@ class MainActivity : AppCompatActivity() {
     private fun assignment4(){
         val intent4 = Intent(this, Assignment4::class.java)
         startActivity(intent4)
+    }
+
+    private fun assignment5(){
+        val intent5 = Intent(this, Assignment5::class.java)
+        startActivity(intent5)
     }
 
 }
