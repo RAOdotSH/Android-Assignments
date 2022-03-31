@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".Assignment5">
+
+    <RelativeLayout
+        android:id="@+id/center_horiz_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center_vert_line"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/male"
+        android:layout_width="135dp"
+        android:layout_height="150dp"
+        android:layout_toStartOf="@id/center_vert_line"
+        android:layout_above="@id/height_layout"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/male_female_normal"
+        >
+        
+        <ImageView
+            android:id="@+id/img_male"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_icons8_user_male_240"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/text_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Male"
+            android:textStyle="bold"
+            android:textColor="@color/pink"
+            android:textSize="24sp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp">
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/female"
+        android:layout_width="135dp"
+        android:layout_height="150dp"
+        android:layout_toEndOf="@id/center_vert_line"
+        android:layout_above="@id/height_layout"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/male_female_normal"
+        >
+
+        <ImageView
+            android:id="@+id/img_female"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_icons8_female_user_240"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/text_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Female"
+            android:textStyle="bold"
+            android:textColor="@color/pink"
+            android:textSize="24dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp">
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/height_layout"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/center_horiz_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/card_bg">
+
+        <TextView
+            android:id="@+id/height_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Height"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <EditText
+            android:id="@+id/curr_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="50dp"
+            android:inputType="numberSigned"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/pink"
+            android:textSize="30sp"
+            android:imeOptions="actionDone">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_toEndOf="@id/curr_height"
+            android:text="cm"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="18sp">
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/height_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/pink" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weight_layout"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/height_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/card_bg">
+
+        <TextView
+            android:id="@+id/weight_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Weight"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <EditText
+            android:id="@+id/curr_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="50dp"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/pink"
+            android:textSize="30sp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_toEndOf="@id/curr_weight"
+            android:text="kilo"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="18sp">
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/weight_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/pink" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/age_layout"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/weight_layout"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/card_bg"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/age_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Age"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center">
+        </TextView>
+
+        <TextView
+            android:id="@+id/curr_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="1"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/pink"
+            android:textAlignment="center">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/plus_age"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="210dp"
+            android:src="@drawable/plus_math">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/minus_age"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/subtract">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <android.widget.Button
+        android:id="@+id/calculateBTN"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Calculate"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/btn_bg">
+    </android.widget.Button>
+
+
+</RelativeLayout>

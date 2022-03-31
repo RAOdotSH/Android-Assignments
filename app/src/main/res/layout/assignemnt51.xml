@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".Assignemnt5_1">
+
+    <RelativeLayout
+        android:id="@+id/center_horiz_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center_vert_line"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/result_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icons8_check_mark_button"
+        android:layout_above="@+id/center_horiz_line"
+        android:layout_marginBottom="150dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:background="@drawable/card_bg1"
+        android:padding="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/result_background"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/center_horiz_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-75dp"
+        android:background="@drawable/card_bg"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Result"
+            android:textColor="@color/pink"
+            android:textSize="46sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/result_text_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/result_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/result_text_value"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Gender"
+            android:textColor="@color/white"
+            android:textSize="28sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/bmi_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Your BMI category"
+            android:textColor="@color/pink"
+            android:textSize="28sp">
+        </TextView>
+
+    </RelativeLayout>
+
+    <android.widget.Button
+        android:id="@+id/recalculateBTN"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Re-Calculate"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/btn_bg">
+    </android.widget.Button>
+
+</RelativeLayout>
