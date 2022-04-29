@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
 
         val assignment5btn = findViewById<Button>(R.id.Assignment5)
         assignment5btn.setOnClickListener{ assignment5() }
+
+        val assignment7_8btn = findViewById<Button>(R.id.Assignment7And8)
+        assignment7_8btn.setOnClickListener{ assignment7_8() }
     }
 
     private fun assignment1() {
@@ -52,4 +55,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent5)
     }
 
+    private fun assignment7_8(){
+        val intent7_8 = Intent(this, Assignment7_8::class.java)
+        startActivity(intent7_8)
+    }
 }

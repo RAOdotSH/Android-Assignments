@@ -13,6 +13,7 @@
         <entry key="app/src/main/res/drawable/male_female_focus.xml" value="0.2975" />
         <entry key="app/src/main/res/drawable/male_female_normal.xml" value="0.2975" />
         <entry key="app/src/main/res/drawable/plus_minus.xml" value="0.2975" />
+        <entry key="app/src/main/res/layout/activity_assignment67.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/assignemnt51.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/assignment1.xml" value="0.353125" />
@@ -21,7 +22,10 @@
         <entry key="app/src/main/res/layout/assignment4.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/assignment5.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/assignmnet3_1.xml" value="0.353125" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.353125" />
+        <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/list_item.xml" value="0.353125" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.353125" />
       </map>
     </option>
   </component>

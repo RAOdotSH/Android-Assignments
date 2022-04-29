@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Assignments">
         <activity
+            android:name=".Assignment7_8"
+            android:exported="false"
+            android:label="@string/title_activity_assignment67" />
+        <activity
             android:name=".Assignemnt5_1"
             android:exported="false" />
         <activity
