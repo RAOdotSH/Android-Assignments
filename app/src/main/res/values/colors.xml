@@ -20,4 +20,5 @@
     <color name="crimson_red">#FF0033</color>
     <color name="yellow">#FFD800</color>
     <color name="green">#00FF00</color>
+    <color name="light_green">#00FF00</color>
 </resources>
